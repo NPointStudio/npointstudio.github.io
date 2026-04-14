@@ -856,6 +856,24 @@ p {
     .restoria-page .nav-links {
         gap: 24px;
     }
+
+    .scroller-track img {
+        height: 200px;
+    }
+
+    .social-box {
+        width: 56px;
+        height: 56px;
+    }
+
+    .social-grid {
+        gap: 16px;
+    }
+
+    .restoria-socials h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
 }
 
 /* --- NEW NPOINT REDESIGN CSS --- */
