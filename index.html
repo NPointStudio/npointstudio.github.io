@@ -3,82 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>N.Point Studio | Restoria</title>
-    
-    <!-- Google Fonts: Outfit -->
+    <title>N.Point Studio | Indie Game Developer</title>
+    <!-- Google Fonts: EB Garamond & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700;1,800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="restoria-page">
 
-    <nav class="navbar">
-        <div class="logo">n.point<br>studios</div>
+    <!-- NAVBAR -->
+    <nav class="navbar fade-up">
+        <div class="navbar-logo">
+            <a href="index.html" style="text-decoration: none;">
+                <img src="assets/framer_assets/0O8AmmEE0BCmutnB0kLEMtS75s.png" alt="N.Point Logo" class="npoint-logo-img">
+            </a>
+        </div>
         <div class="nav-links">
-            <a href="#restoria">Games</a>
-            <a href="#about">About</a>
+            <a href="about.html">About</a>
+            <a href="restoria.html">Restoria</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <section class="section section-hero">
-        <div class="hero-content">
-            <h1 class="fade-up">We build worlds.<br>Introducing<br>Restoria</h1>
-        </div>
-        
-        <div class="cards-container fade-up delay-1">
-            <!-- Let's find the exact filenames of the generated images from assets folder -->
-            <!-- We will use a script to set the image source properly, or I'll just hardcode the wildcards since there's one of each -->
-            <!-- Actually, I need to know the exact filename. I will run a script to see them or just use ls? I used a wildcard to copy them, so I should just list the dir or run ls in next step if I forgot. Wait, I can see them in my history: restoria_magical_forest_1775534982587.png, restoria_ancient_temple_1775535003839.png, restoria_glowing_artifact_1775535023765.png -->
-            <img src="assets/restoria_museum_desk_1775536633255.png" alt="Museum Conservator Desk" class="img-card card-1">
-            <img src="assets/restoria_artifact_cleaning_1775536648511.png" alt="Mindful Artifact Cleaning" class="img-card card-2">
-            <img src="assets/restoria_museum_room_1775536668193.png" alt="Relaxing Museum Exhibition" class="img-card card-3">
-        </div>
-    </section>
+    <div class="page-wrapper">
 
-    <!-- VIDEO SCROLL SECTION -->
-    <section class="section-video-scroll" id="video-experience">
-        <div class="video-sticky">
-            <canvas id="scroll-canvas"></canvas>
-            <div class="video-overlay fade-up">
-                <h2>Breathe life<br>into history.</h2>
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <img src="assets/framer_assets/lS8pivuCL7u6dhwCs5cZYM5v1JI.png" alt="N.Point Restoria Type" class="npoint-type-img fade-up delay-1">
+            <div class="subtitle fade-up delay-2">- Cozy Artifact Restoration -</div>
+            <a href="#" class="btn fade-up delay-2">
+                Wishlist Now on Steam
+                <span class="steam-circle"><img src="assets/framer_assets/steam.svg" alt="Steam"></span>
+            </a>
+        </section>
+
+        <!-- VIDEO SECTION -->
+        <div class="video-hero fade-up delay-1">
+            <video src="assets/EsgnPI0P198047tZdTSOdJqfGc.mp4" autoplay loop muted playsinline preload="auto"></video>
+        </div>
+
+        <!-- MEET N.POINT SECTION -->
+        <section class="meet-npoint-section fade-up">
+            <div class="meet-content">
+                <h2>Meet N.Point</h2>
+                <p>Go ahead and say just a little more about what you do.</p>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-dark">Follow my Profile</a>
+                    <a href="#" class="btn btn-outline">Secondary</a>
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="meet-image">
+                <img src="assets/framer_assets/MhVKvPROX81GxgpOnhmO7uekIY.png" alt="Meet N.Point">
+            </div>
+        </section>
 
-    <!-- RESTORIA SECTION -->
-    <section class="section section-game" id="restoria">
-        <div class="game-info">
-            <span class="badge fade-up">In active development</span>
-            <h1 class="fade-up">Restoria</h1>
-            <p class="fade-up delay-1">Play as a museum conservator uncovering the hidden stories behind artifacts through mindful restoration.</p>
-        </div>
-        <div class="game-showcase fade-up delay-2">
-            <img src="assets/restoria_artifact_cleaning_1775536648511.png" alt="Artifact Cleaning Showcase" class="large-showcase">
-        </div>
-    </section>
+        <!-- OUR GAMES SECTION -->
+        <section class="our-games-section fade-up" id="games">
+            <h2 class="section-title">Our Games</h2>
+            <div class="games-grid">
+                <!-- Game 1 -->
+                <div class="game-card">
+                    <div class="game-img">
+                        <img src="assets/restoria_artifact_cleaning_1775536648511.png" alt="Restoria Screenshot">
+                    </div>
+                    <div class="game-info">
+                        <h3>Restoria</h3>
+                        <p>Mindfully clean and polish ancient artifacts to uncover their hidden stories and magical history.</p>
+                    </div>
+                </div>
+                <!-- Game 2 -->
+                <div class="game-card">
+                    <div class="game-img">
+                         <img src="assets/restoria_magical_forest_1775534982587.png" alt="Heir of Smith Screenshot">
+                    </div>
+                    <div class="game-info">
+                        <h3>Heir of Smith</h3>
+                        <p>Forge powerful weapons and explore lush, mystical forests in this adventure-driven blacksmith simulator.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- ABOUT SECTION -->
-    <section class="section section-about" id="about">
-        <h1 class="fade-up">We push the limits<br>of indie games.</h1>
-        <a href="#" class="cta-link fade-up delay-1">Our vision →</a>
-    </section>
+        <!-- SOCIALS SECTION -->
+        <section class="socials-section fade-up" id="contact">
+            <h2>You can also find us on</h2>
+            <div class="social-icons">
+                <a href="#"><img src="assets/framer_assets/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="assets/framer_assets/tiktok.svg" alt="TikTok"></a>
+                <a href="#"><img src="assets/framer_assets/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="assets/framer_assets/discord.svg" alt="Discord"></a>
+                <a href="#"><img src="assets/framer_assets/linkedin.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="assets/framer_assets/steam.svg" alt="Steam" style="filter: brightness(0);"></a>
+                <a href="#"><img src="assets/framer_assets/apple.svg" alt="Apple"></a>
+            </div>
+        </section>
 
-    <!-- FOOTER -->
-    <footer class="footer section">
-        <div class="footer-content fade-up">
+        <!-- FOOTER -->
+        <footer class="fade-up">
+            <div class="footer-logo">
+                <img src="assets/framer_assets/0O8AmmEE0BCmutnB0kLEMtS75s.png" alt="N.Point Logo" class="npoint-logo-img">
+            </div>
             <div class="footer-links">
-                <a href="#">Steam →</a>
-                <a href="#">Twitter →</a>
-                <a href="#">Press Kit →</a>
+                <div class="footer-col">
+                    <h4>Games</h4>
+                    <a href="restoria.html">Restoria</a>
+                    <a href="#games">Heir of Smith</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Studio</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press Kit</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
-            <div class="footer-brand">
-                n.point studios © 2026
-            </div>
-        </div>
-    </footer>
+        </footer>
+
+    </div>
 
     <!-- GSAP & ScrollTrigger -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
